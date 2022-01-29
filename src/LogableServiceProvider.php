@@ -33,5 +33,10 @@ class LogableServiceProvider extends ServiceProvider
                 ClearLog::class,
             ]);
         }
+
+        $this->publishes([
+            __DIR__.'/Config/logable.php' => config_path('logable.php'),
+        ], 'config');
+
     }
 }

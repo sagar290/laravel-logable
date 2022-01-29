@@ -37,6 +37,11 @@ protected $middleware = [
 ];
 ```
 
+Publish configuration file.
+``` php
+php artisan vendor:publish --provider="Sagar290\Logable\LogableServiceProvider" --tag="config"
+```
+
 ## Commands
 
 ### monitoring logs
@@ -53,3 +58,6 @@ This will live monitor all incoming requests and log them to the log file.
 php artisan logs:clear
 ```
 This will clear all logs.
+
+## Conclusion
+Please feel free raise an issue if you have problem. Also, feel free to star this repository on [Github](sagar290/laravel-logable). Contribute to this project by making a pull request.
