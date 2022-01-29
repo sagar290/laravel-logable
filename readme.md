@@ -19,14 +19,19 @@ To register service provider you need to add this line in your `config/app.php` 
 ],
 ```
 
-also, you need add this configuration in `config/logging.php` file.
+also, you need add this configuration in `config/logging.php` file in channels array.
 
 ``` php
-'logable' => [
-    'driver' => 'daily',
-    'path' => storage_path('logs/logable.log'),
-    'level' => 'debug',
-],
+
+'channels' => [
+    .....
+    'logable' => [
+        'driver' => 'daily',
+        'path' => storage_path('logs/logable.log'),
+        'level' => 'debug',
+    ],
+]
+
 ```
 
 Add this middleware to your `app/Http/Kernel.php` file.
