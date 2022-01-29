@@ -60,4 +60,4 @@ php artisan logs:clear
 This will clear all logs.
 
 ## Conclusion
-Please feel free raise an issue if you have problem. Also, feel free to star this repository on [Github](sagar290/laravel-logable). Contribute to this project by making a pull request.
+Please feel free raise an issue if you have problem. Also, feel free to star this repository on [Github](https://github.com/sagar290/laravel-logable). Contribute to this project by making a pull request.
