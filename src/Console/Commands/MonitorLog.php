@@ -132,7 +132,7 @@ class MonitorLog extends Command
                         $lineBreakDown[0] . ' ' . $lineBreakDown[1],
                         ...$valuesFromMessage
                     ]
-                ], 'box');
+                ], 'default');
 
                 return;
             }
@@ -187,7 +187,7 @@ class MonitorLog extends Command
                 continue;
             }
 
-            $validData[] = wordwrap($message, config('logable.wordwrap', 50), "\n", true);
+            $validData[] = wordwrap($message, config('logable.wordwrap', 30), "\n", true) . "\n";
         }
 
         return $validData;

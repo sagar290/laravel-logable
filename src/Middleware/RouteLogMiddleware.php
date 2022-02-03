@@ -30,6 +30,7 @@ class RouteLogMiddleware
             'ip' => $request->ip(),
             'user_agent' => $request->userAgent(),
             'body' => $request->all(),
+            'response_code' => $response->getStatusCode(),
             'response_time' => Carbon::parse($logable->getTotalDuration())->format('Uv') . ' ms',
         ]));
 
