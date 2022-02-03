@@ -53,7 +53,7 @@ php artisan vendor:publish --provider="Sagar290\Logable\LogableServiceProvider" 
 ``` php
 php artisan logs:monitor
 ```
-![image laravel logable](./assets/Screenshot1.png)
+![image laravel logable](./assets/Screenshot2.png)
 
 This will live monitor all incoming requests and log them to the log file.
 
