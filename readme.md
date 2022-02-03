@@ -11,15 +11,7 @@ Laravel version >= 6.0
 composer require sagar290/laravel-logable
 ```
 
-To register service provider you need to add this line in your `config/app.php` file.
-``` php
-'providers' => [
-    ...
-    Sagar290\Logable\LogableServiceProvider::class,
-],
-```
-
-also, you need add this configuration in `config/logging.php` file in channels array.
+You need add this configuration in `config/logging.php` file in channels array.
 
 ``` php
 
