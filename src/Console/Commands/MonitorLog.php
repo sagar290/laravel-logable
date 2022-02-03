@@ -187,7 +187,7 @@ class MonitorLog extends Command
                 continue;
             }
 
-            $validData[] = $message;
+            $validData[] = wordwrap($message, config('logable.wordwrap', 50), "\n", true);
         }
 
         return $validData;
@@ -201,7 +201,7 @@ class MonitorLog extends Command
      * @param string $tableStyle
      * @param array $columnStyles
      */
-    public function table($headers, $rows, $tableStyle = 'symfony-style-guide', array $columnStyles = [])
+    public function table($headers, $rows, $tableStyle = 'default', array $columnStyles = [])
     {
         $table = new Table($this->output);
 

@@ -3,6 +3,7 @@
 namespace Sagar290\Logable;
 
 use Illuminate\Support\ServiceProvider;
+use Sagar290\Logable\Classes\Logable;
 use Sagar290\Logable\Console\Commands\ClearLog;
 use Sagar290\Logable\Console\Commands\MonitorLog;
 
@@ -15,9 +16,9 @@ class LogableServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
-
-
+        app()->singleton('logable', function () {
+            return new Logable;
+        });
     }
 
     /**
